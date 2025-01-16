@@ -1,8 +1,62 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    position: fixed;
+    margin: 0 auto;
+    bottom: 50px;
+    font-size: 11px; text-align: center; 
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 body {
-    background-color: hsl(216, 15%, 48%) !important;
+    font-family: "Outfit", serif;
+    background-color: hsl(212, 45%, 89%) !important;
     margin: 0; 
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 310px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card-image {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 90%;
+    height: auto;
+    display: block;
+    border-radius: 13px;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin: 0 0 8px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 16px;
+  }
+
+  @media (max-width: 425px) {
+    .card {
+      max-width: 90%; 
+    }
+  }
